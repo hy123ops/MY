@@ -1,0 +1,22 @@
+<div class="my-group">
+    <div class="my-left">
+        <i class="yo-ico">&#xe679;</i>
+        <span class="movie">电影票</span>
+    </div>
+    <div class="my-right">
+        <i class="yo-ico">&#xe645;</i>
+        <span class="movie">优惠券</span>
+    </div>
+</div>
+<div class="gird-wrap">
+    <div class="gird">
+        <span class="gird-name">淘票票乐影卡</span>
+        <i class="yo-ico">&#xe62b;</i>
+    </div>
+</div>
+<div class="gird-wrap2">
+    <div class="gird2">
+        <span class="gird-name2">帮助与反馈</span>
+        <span class="xm">咨询票小蜜<i class="yo-ico">&#xe62b;</i></span>
+    </div>
+</div>

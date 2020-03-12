@@ -1,0 +1,22 @@
+<li class="movie cell" data-id="180">
+        <img class="poster" src="https://p0.meituan.net/128.180/movie/1f4bc49ed6c5a3ba23a93ecd68b73da1362146.jpg" alt="">
+        <div class="info">
+          <div class="name-score">
+            <p class="name">
+              <span class="one-line">唐山大地震</span>
+              <span class="version v2d imax"></span>
+            </p>            
+                <span class="score">
+                  <span class="num">8.3</span>分
+                </span>
+          </div>
+          <div class="detail-section">
+            <div class="detail-items">
+              <p class="ename one-line">Aftershock</p>
+              <p class="catogary">剧情,历史,灾难</p>
+              <p class="release">2010-07-22</p>
+            </div>
+            
+          </div>
+        </div>
+    </li>

@@ -1,0 +1,4 @@
+<div class="cinemaShow-head">
+    <i class="yo-ico" id="back" data-to="search">&#xe602;</i>
+    <h1 class="nav-head">{{list.cinemaData.nm}}</h1>
+</div>

@@ -1,0 +1,146 @@
+.search-wrapper{
+    background-color: #f5f5f5;
+    height: 100vh;
+    overflow-y: scroll;
+    .search-header{
+        display: flex;
+        align-items: center;
+        padding: 8px 0 8px 10px;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #e5e5e5;
+        width: 100%;
+        @include ellipsis();
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        .input-wrapper{
+            padding: 0 10px;
+            @include border(1px 1px 1px 1px,#e6e6e6);
+            border-radius: 5px;
+            background-color: #fff;
+            flex-grow: 1;
+            position: relative;
+            width: 100%;
+            @include ellipsis();
+            overflow: hidden;
+            .yo-ico{
+                color: #333;
+                margin-right: 6px;
+                line-height:.2rem ;
+            }
+            .search-input{
+                width: 80%;
+                border: none;
+                font-size: 13px;
+                color: #333;
+                line-height: .2rem;
+                padding: 4px 0;
+            }
+            .del-input{
+                width: .15rem;
+                height: .15rem;
+                line-height: .2rem;
+                top: 6px;
+                right: 2px;
+                position: absolute;
+            }
+        }
+        .cancel{
+            height: .3rem;
+            line-height: .3rem;
+            padding: 0 10px;
+            font-size: 16px;
+            color: #f03d37;
+        }
+        #suggest{
+            position: absolute;
+            top:100px;
+            z-index: 2;
+        }
+    }
+    .cinemaSerachMod {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        .searchResult{
+            width: 100%;
+            // height: 100%;
+            background: #fff;
+            //padding: 0 .15rem 0 .15rem;
+            h3{
+                font-size: .15rem;
+                color: #999;
+                padding: .1rem .15rem;
+            }
+            .C-list{
+                display: flex;
+                flex-direction: row;
+                width: 3.6rem;
+                height: 1.1rem;
+                //padding: .15rem .15rem .15rem 0;
+                @include border(1px 0 0 0, #999);
+                .info{
+                    width: 2.8rem;
+                    .name-one{
+                        padding-bottom: .06rem;
+                        height: 0.25rem;
+                        width: 3.3rem;
+                        @include ellipsis(null ,1);
+    
+                        .name{
+                            color: #000;
+                            font-size: .16rem;
+                            //font-weight: 600;
+    
+                        }
+                        .sell-Price{
+                            margin-left: 0.1rem;
+                            font-size: .11rem;
+                            color: #999;
+                            .price{
+                                font-size: .17rem;
+                                color: #ef4238;
+                            }
+                        }
+                    }
+                    .address-one{
+                        height: 0.19rem;
+                        font-size: .13rem;
+                        color: #999;
+                        font-weight: 520;
+                        margin-top: .1rem;
+                        @include ellipsis(null ,1);
+    
+                    }
+                    .fear-tags{
+                        padding-top: .07rem;
+                        height: 0.21rem;
+                        span{
+                            //@include border(1px , #589daf);
+                            padding: 0.03rem .03rem;
+                            // line-height: .15rem;
+                            font-size: .1rem;
+                        }
+                        .sell,.endorse{
+                            @include border(1px , #589daf);
+                            color: #589daf;
+                        }
+                        .snack{
+                            color: #f90;
+                            @include border(1px , #f90);
+                        }
+                    }
+                }
+                .distance{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    font-weight: 600;
+                    color: #999;
+    
+                    // justify-content: center;
+                }
+            }   
+        }
+    }
+}

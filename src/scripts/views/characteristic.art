@@ -1,0 +1,18 @@
+<div class="special-content">
+        <div class="item-title">特色功能</div>
+        <div class="item-list">
+                {{each ser}}
+                <div class="item">{{$value.name}}</div>
+                {{/each}}
+        </div>
+        <div class="item-title">特殊厅</div>
+        <div class="item-list">
+                {{each cha}}
+                <div class="item">{{$value.name}}</div>
+                {{/each}}
+        </div>
+        <div id="special-btn">
+                <span class="btn" id="cancel-btn">重置</span>
+                <span class="btn" id="confirm-btn">确定</span>
+        </div>
+</div>

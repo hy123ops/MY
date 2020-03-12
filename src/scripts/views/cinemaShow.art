@@ -1,0 +1,31 @@
+
+<div class="body-wrap">
+    <div class="cinema-wrap">
+        <div class="cinema-block">
+            <div class="cinema-info">
+                <div class="title line-ellipsis">{{list.cinemaData.nm}}</div>
+                <div class="location line-ellipsis">{{list.cinemaData.addr}}</div>
+                <div class="location-icon">
+                    <img src="/assets/images/add.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cinema-nav">
+        <div class="movlist">
+            <div class="swiper-container">
+                <div class="box-z"></div>  
+                    <div class="box" style="background:url({{list.showData.movies[0]? list.showData.movies[0].img.replace(/w\.h/,'128.180'):''}})"></div>
+                    <div class="swiper-wrapper m-father">
+                            {{each list.showData.movies}}
+                    <div class="swiper-slide mvlist" >
+                    <img src="{{$value.img? $value.img.replace(/w\.h/,'128.180'):''}}" alt="">
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="movdes">
+    
+</div>

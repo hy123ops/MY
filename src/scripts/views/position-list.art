@@ -1,0 +1,21 @@
+{{each list}}
+<li class="m-item" data-id="{{$value.id}}">
+  <a class="poster-c" href="##">
+    <img src="{{$value.img.replace(/w\.h/,'128.180')}}">
+  </a>
+  <a class="m-item-content" href="##">
+    <div class="title">
+      <p class="show-name">{{$value.nm}}<i class="lbl-hdr">{{$value.version.match(/\dd/)?$value.version.match(/\dd/)[0].toUpperCase():''}}</i><i class="lbl">{{$value.version.match(/imax/)?'IMAX':''}}</i></p>
+      <p class="brief">淘票票评分&nbsp;&nbsp;<span class="txt-warning">{{$value.sc}}</span></p>
+      <p class="brief">主演：{{$value.star}}</p>
+      <p class="brief">{{$value.showInfo}}</p>
+    </div>
+  </a>
+  <div class="btn-wrap">
+    <a class="tpp-btn" href="##">
+      购票
+    </a>
+    <div class="act-tag">特惠</div>
+  </div>
+</li>
+{{/each}}

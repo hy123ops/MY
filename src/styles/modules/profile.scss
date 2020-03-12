@@ -1,0 +1,119 @@
+.my-center{
+    background: pink;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .my-head{
+        background: #ff2e62;
+        height: 45.33vw;
+        padding-left: 6.67vw;
+        padding-right: 6.67vw;
+        padding-top: 8vw;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .head-icon{
+            //flex: 1;
+            width: 60px;
+            height: 60px;
+            img{
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .my-name{
+            color: #fff;
+            font-weight: 500;
+            font-size: .24rem;
+            margin-left: 4vw;
+            line-height: 60px;
+            @include ellipsis();
+        }
+    }
+}
+.my-group{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    @include ellipsis();
+    .my-left,.my-right{
+        flex: 1;
+        line-height: .3rem;
+        text-align: center;
+        margin-top: 12.66666667vw;
+        .yo-ico{
+            display: block;
+            text-align: center;
+            line-height: .7rem;
+            font-size: .3rem;
+        }
+        .movie{
+            color: #666;
+            margin-top: 2.67vw;
+            font-size: .14rem;
+            line-height: 3.47vw;
+        }
+    }
+    .my-left{
+        .yo-ico{
+            color: #ff2e62;
+        }
+    }
+    .my-right{
+        .yo-ico{
+            color: orange;
+        }
+    }
+}
+.gird-wrap{
+    height: 16vw;
+    line-height: .56rem;
+    background-color: #fff;
+    @include border(1px 0 0 0);
+    @include ellipsis();
+    .gird{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        line-height: .56rem;
+        text-align: center;
+        padding: 0 .1rem;
+        .gird-name{
+            color: #000;
+            font-size: .18rem;
+            margin-right: 2.67vw;
+        }
+        .yo-ico{
+            flex: 1;
+            text-align: right;
+            color: #bcbcbc;
+        }
+    }
+}
+.gird-wrap2{
+    height: 16vw;
+    line-height: .56rem;
+    background-color: #fff;
+    @include border(1px 0 0 0);
+    @include ellipsis();
+    .gird2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        line-height: .56rem;
+        text-align: center;
+        padding: 0 .1rem;
+        .gird-name2{
+            color: #000;
+            font-size: .18rem;
+            margin-right: 2.67vw;
+        }
+        .xm{
+            flex: 1;
+            text-align: right;
+            color: #bcbcbc;
+            font-size: .14rem;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{{each allci}}
+<div class="item" data-type="area" data-id="1">
+    <span class="item-name">{{$value.name}}</span>
+    <span class="item-count">{{$value.count}}</span>
+</div>
+{{/each}}

@@ -1,0 +1,17 @@
+<div class="search-wrapper">
+    <div class="search-header">
+        <div class="input-wrapper">
+            <span class="yo-ico">&#xe67a;</span>
+            <input class="search-input" type="text" placeholder="搜影院">
+            <img class="del-input" style="display: none;"
+                src="http://s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/close.png" alt="">
+        </div>
+        <div class="cancel" id="cancel" data-to="search">取消</div>
+    </div>
+    <div class="cinemaSerachMod">
+        <ul class="searchResult">
+
+        </ul>
+        <ul class="play"></ul>
+    </div>
+</div>

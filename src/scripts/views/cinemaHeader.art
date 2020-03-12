@@ -1,0 +1,10 @@
+<div id="headerList" style="position: relative;z-index: 99;">
+        
+    <div class="city-c">
+        <div class="city-name" data-to="cityChoose"><div class="arrow-down"></div></div>
+    </div>
+    <div class="allCity all act " ref="true">全城<div class="arrow-down"></div></div>
+    <div class="comprehensive all"ref="true">品牌<div class="arrow-down"></div></div>
+    <div class="characteristic all"ref="true">特色<div class="arrow-down"></div></div>
+    <div class="search"><span class="yo-ico" id="call" data-to="cinemaSearch">&#xe67a;</span></div>
+</div>

@@ -1,0 +1,78 @@
+#headerList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 53px;
+  line-height: 53px; }
+  #headerList .city-c {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    background: url(http://gw.alicdn.com/tfs/TB1mKkzl9zqK1RjSZFpXXakSXXa-50-50.svg) no-repeat;
+    background-size: 25px 25px;
+    background-position: 15px;
+    padding-left: 50px; }
+    #headerList .city-c .city-name {
+      color: #333;
+      font-weight: 700;
+      font-size: .16rem; }
+      #headerList .city-c .city-name .arrow-down {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 3px; }
+        #headerList .city-c .city-name .arrow-down::after {
+          content: "";
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-top: 4px solid #333;
+          display: block; }
+  #headerList .allCity {
+    padding-right: 5px;
+    flex: 2;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #headerList .allCity .arrow-down {
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 3px; }
+      #headerList .allCity .arrow-down::after {
+        content: "";
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #333;
+        display: block; }
+  #headerList .comprehensive {
+    padding-right: 5px;
+    flex: 2;
+    font-size: 12px;
+    width: 100%; }
+    #headerList .comprehensive .arrow-down {
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 3px; }
+      #headerList .comprehensive .arrow-down::after {
+        content: "";
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #333;
+        display: block; }
+  #headerList .characteristic {
+    padding-right: 5px;
+    font-size: 12px;
+    flex: 2; }
+    #headerList .characteristic .arrow-down {
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 3px; }
+      #headerList .characteristic .arrow-down::after {
+        content: "";
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #333;
+        display: block; }
+  #headerList .search {
+    flex: 1;
+    text-align: center;
+    font-size: .18rem; }

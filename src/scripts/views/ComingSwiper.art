@@ -1,0 +1,17 @@
+<div class="ComingSwiper">
+    <p class="title">近期最受期待</p>
+    <div class="swiper-container4">
+        <DIV class="swiper-wrapper">
+                {{each sw}}
+                <div class="swiper-slide" data-id="{{$value.id}}">
+                    <div class="item">
+                        <span class="wish"><span class="wish-num">{{$value.wish}}</span>人想看</span>
+                        <img class="ppp" src="{{$value.img.replace(/w\.h/,'170.230')}}">
+                    </div>
+                    <h5 class="name line-ellipsis">{{$value.nm}}</h5>
+                    <p class="date">{{$value.comingTitle}}</p>
+                </div>
+                {{/each}}
+        </DIV>
+    </div>
+</div>

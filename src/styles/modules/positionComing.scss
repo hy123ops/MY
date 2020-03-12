@@ -1,0 +1,271 @@
+.head,
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+.head img,
+.foot img {
+  width: .16rem;
+  height: .16rem;
+  transition: transform 150ms;
+  -webkit-transition: transform 150ms;
+}
+.head img {
+  transform: rotate(180deg);
+}
+.up {
+  transform: rotate(360deg) !important;
+  -webkit-transform: rotate(360deg) !important;
+}
+.down {
+  transform: rotate(180deg);
+}
+.index-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   z-index: 10;
+    header {
+      overflow: hidden;
+      background: #fff;
+      width: 100%;
+      background-size: 100% 1px;
+      @include ellipsis();
+      .city-c{
+        width: 42%;
+        display: inline-block;
+        vertical-align: top;
+        height: .5rem;
+        line-height: .5rem;
+        background: url(http://gw.alicdn.com/tfs/TB1mKkzl9zqK1RjSZFpXXakSXXa-50-50.svg) no-repeat;
+        background-size: 25px 25px;
+        background-position: 15px;
+        padding-left: 50px;
+        .city-name{
+          color: #333;
+          font-weight: 700;
+          font-size: .16rem;
+          .arrow-down{
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 3px;
+            &::after{
+                content: "";
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-top: 4px solid #333;
+                display: block;
+            }
+          }
+        }
+      }
+      .m-tab-wrap{
+        height: .5rem;
+        width: 50%;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        ul{
+          height: 100%;
+          display: flex;
+          li{
+            flex: 1;
+            padding: 0 15px;
+            line-height: .5rem;
+            text-align: center;
+          }
+          // #posComing{
+          //   font-weight: 700;
+          //   color: #ff2e62;
+          //   border-bottom: 2px solid #ff2e62;
+          // }
+        }
+      }
+    }
+  
+    main {
+      flex: 1;
+      overflow: hidden;
+    }
+  
+    footer {
+      height: .5rem;
+      background: #f6f6f6;
+      ul {
+        height: 100%;
+        display: flex;
+        background:#f6f6f6 ;
+        li {
+          flex: 1;
+          background: #f6f6f6;
+          color: #777;
+          .yo-ico {
+            display: block;
+            text-align: center;
+            line-height: .2rem;
+            font-size: 16px;
+          }
+          .yo-name{
+            display: block;
+            font-size: 10px;
+            text-align: center;
+            //line-height: .2rem;
+          }
+          &.active {
+            //background: #e7f3f0;
+            color: #ff2e62;
+          }
+        }
+      }
+    }
+    .list-wrapper1{
+      height: 100%;
+      overflow: hidden;
+      .list-container1 ul {
+        background: #fff;
+        z-index: 5;
+        .m-item2 {
+          display: flex;
+          flex-direction: row;
+          padding: .15rem;
+          @include border(0 0 1px 0, #e8e8e8);
+          .poster-c img {
+            width: .57rem;
+            height: .84rem;
+          }
+          .m-item-content {
+            padding: 0 .2rem;
+            flex: 1;
+            width: 100%;
+            overflow: hidden;
+            .show-name {
+              font-size: .18rem;
+              color: #333;
+              font-weight: 700;
+              //@include ellipsis();
+              .lbl-hdr {
+                color: #fff;
+                background: #589daf;
+                //padding: 0 3px;
+                font-weight: 300;
+                font-size: .12rem;
+              }
+              .lbl {
+                color: #589daf;
+                background: #fff;
+                //padding: 0 3px;
+                font-weight: 300;
+                font-size: .12rem;
+              }
+            }
+            .brief {
+              color: #666;
+              font-size: 13px;
+              margin-top: 3px;
+              @include ellipsis();
+              .txt-warning {
+                color: #ff9c1c;
+                font-size: 14px;
+                font-weight: 700;
+              }
+            }
+            .fantastic {
+              max-height: 16px;
+              margin-top: .05rem;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              .tpp-lbl {
+                color: #ff9c1c;
+              }
+              .tpp-lbl2 {
+                color: #1394f3;
+              }
+            }
+          }
+          .btn-wrap {
+            height: 100%;
+            line-height: .5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin-left: .3rem;
+            .tpp-btn {
+              display: block;
+              color: #fff;
+              height: 28px;
+              line-height: 28px;
+              text-align: center;
+              padding: 0 13px;
+              font-size: 12px;
+              border-radius: 120px;
+              margin-top: .2rem;
+              background: #3c9fe6;
+            }
+            .act-tag {
+              color: #999;
+              margin-top: -.15rem;
+              font-size: .12rem;
+            }
+          }
+        }
+      }
+      
+    }
+    .Coming-swiper{
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      width: 100%;
+      .ComingSwiper{
+        width: 100%;
+        margin-bottom: .2rem;
+        .title{
+          font-size: .14rem;
+          color: #333;
+          padding: .1rem 0 0 .1rem;
+          margin-bottom: .12rem;
+        }
+        .swiper-container4{
+          //overflow: scroll;
+          //width: 100%;
+          height: 100%;
+          white-space: nowrap;
+          margin-left: .1rem;
+          .swiper-wrapper{
+           // display: inline-block;
+            width: 85px;
+            //overflow: hidden;
+            margin-right: 10px;
+            .swiper-slide{
+              .wish{
+                position: absolute;
+              left: 4px;
+              bottom: 40px;
+              color: #faaf00;
+              font-size: 11px;
+              font-weight: 600;
+              }
+              img{
+                width: .85rem;
+                height: 1.19rem;
+              }
+            }
+            h5{
+              margin: 0;
+              font-size: 13px;
+              color: #222;
+              margin-bottom: 3px;
+            }
+            .date{
+              margin: 0;
+              font-size: 12px;
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+  }

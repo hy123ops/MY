@@ -1,0 +1,9 @@
+<div class="city-c">
+  <div class="city-name" data-to="cityChoose"><div class="arrow-down"></div></div>
+</div>
+<div class="m-tab-wrap">
+  <ul>
+    <li class="tab-item  active" id="posHot">正在热映</li>
+    <li class="tab-item" id="posComing" data-to="positionComing">即将上映</li>
+  </ul>
+</div>

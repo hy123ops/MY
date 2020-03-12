@@ -1,0 +1,52 @@
+<DIV class="bscroll-wrapper">
+    <div class="movhome" style="background:{{list.backgroundColor}}">
+        <div class="cinemaShow-head">
+            <i class="yo-ico" id="back" data-to="positionComing">&#xe602;</i>
+            <h1 class="nav-head">{{list.nm}}</h1>
+        </div>
+        <div class="movie_box_t">
+            <div class="movie_img"><img src="{{list.img.replace(/w\.h/,'128.180')}}"></div>
+            <div class="movie_cont">
+                <p class="movie_cnm">{{list.nm}}</p>
+                <p class="movie_enm">{{list.enm}}</p>
+                <p class="movie_cat">{{list.cat}}</p>
+                <p class="movie_star">主演：{{list.star}}</p>
+                <p class="movie_dayrime">{{list.pubDesc}}</p>
+                <div class="watch-wrap">
+                    <div data-bid="b_rjonirtp" type="button" class="button want-to-watch" onoff='true'><img
+                            class="img noneBg" alt="想看" ref="已想看"
+                            src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/want-to-watch.png"><span>想看</span>
+                    </div>
+                    <div class="looked" onoff='true'><img class="img noneBg" alt="看过" ref="已看过"
+                            src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/star.png"><span>看过</span></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="WOM">
+            <p class="wom">实时口碑</p>
+            <div class="look-p"><span class="movie_people ">{{list.wish}}</span><span class="look">人想看</span></div>
+            <p class="welcome">{{list.ver}}</p>
+        </div>
+        <div class="shichang">{{list.videoName}}</div>
+        <div class="brief"><span class="jianjie">简介:</span><span class="zhengwen"> {{list.dra}}</span>
+        </div>
+        <div class="jutiphoto">
+            <span>电影剧照</span>
+            <div class="swiper-container3">
+                <div class="swiper-wrapper">
+                    {{each list.photos}}
+                    <div class="swiper-slide">
+                        <img class="ppp" src="{{$value.replace(/w\.h/,'128.180')}}">
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</DIV>
+<div class="buy-ticket-btn can-buy ">
+    <div class="buy-wrapper"><img class="img noneBg" alt="" data-bid="b_1ynhbq6e"
+            src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/share-icon.png"><a data-bid="b_2cMf2"
+            class="goto-ticket" data-id="{{list.id}}" href="##">特惠购票</a></div>
+</div>

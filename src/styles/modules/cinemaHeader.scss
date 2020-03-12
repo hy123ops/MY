@@ -1,0 +1,78 @@
+#headerList{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: .53rem;
+    //line-height: .45rem;
+    padding: 0 .1rem;
+    .city-c{
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        background: url(http://gw.alicdn.com/tfs/TB1mKkzl9zqK1RjSZFpXXakSXXa-50-50.svg) no-repeat;
+        background-size: .4rem .4rem;
+        background-position: .05rem;
+        .city-name{
+          @include ellipsis();
+          color: #333;
+          font-weight: 700;
+          font-size: .16rem;
+          line-height: .45rem;
+          text-align: center;
+          .arrow-down{
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 3px;
+            &::after{
+                content: "";
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-top: 4px solid #333;
+                display: block;
+            }
+          }
+        }
+      }
+    .all{
+      padding-right: 5px;
+        flex: 2;
+        font-size: 12px;
+        line-height: .45rem;
+        text-align: center;
+        .arrow-down{
+          vertical-align: middle;
+          display: inline-block;
+          margin-left: 3px;
+          &::after{
+              content: "";
+              border-left: 4px solid transparent;
+              border-right: 4px solid transparent;
+              border-top: 4px solid #333;
+              display: block;
+          }
+        }
+    }
+    .choose{
+      color: red;
+      .arrow-down{
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 3px;
+        &::after{
+            content: "";
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid red;
+            display: block;
+        }
+      }
+    }
+
+    .search{
+        flex: 1;
+        line-height: 45px;
+        text-align: center;
+        font-size: 18px;
+    }
+}

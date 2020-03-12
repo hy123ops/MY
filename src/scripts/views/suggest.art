@@ -1,0 +1,21 @@
+<h3>影院</h3>
+{{each arr}}
+<li class="C-list" data-id="{{ $value.id}} " data-to="Cinemadetail">
+    <div class="info">
+        <p class="name-one">
+            <span class="name"> {{ $value.nm}} </span>
+            <span class="sell-Price">
+                <span class="price">{{ $value.sellPrice}} </span>元起
+            </span>
+        </p>
+        <p class="address-one"> {{ $value.addr}}</p>
+        <p class="fear-tags">
+            <%  if($value.sell == 1){ %><span class="sell">座</span> <% } %>
+            <%  if($value.allowRefund == 1){ %><span class="sell">退</span> <% } %>
+            <%  if($value.snack == 1 ){ %><span class="snack"> 小吃</span><% } %>
+            <%  if($value. endorse == 1) { %><span class="endorse" >改签</span><% } %>
+        </p>
+    </div>
+    <div class="distance">{{ $value.distance }}</div>
+</li>
+{{/each}}

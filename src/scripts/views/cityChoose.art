@@ -1,0 +1,67 @@
+<div class="citiesChoose" >
+    <div id="locate" class="city-title cityPos">
+        定位城市
+    </div>
+    <div class="city-inline">
+        <div class="city-item">定位失败，请点击重试</div>
+    </div>
+    <div id="history" class="city-title cityPos">
+        最近访问城市
+    </div>
+    <div class="city-inline">
+            {{each list.slice(0,1)}}
+        <div class="city-item"data-id="{{$value.id}}">
+            北京
+        </div>
+        {{/each}}
+    </div>
+    <div id="hot" class="city-title cityPos" >
+        热门城市
+    </div>
+    <div class="city-inline2">
+        {{each list.slice(0,11)}}
+        <div class="city-item" data-id="{{$value.id}}">
+            {{$value.nm}}
+        </div>
+        {{/each}}
+
+    </div>
+    <div class="city-list">
+        {{each arrFont}}
+        {{if $value}}
+        <div data-id="{{$value.code}}" class="cityPos">
+            <div class="city-title2">
+                {{$value.code}}
+            </div>
+            <ul class="city-inline2">
+                {{each $value.city val key}}
+                <li data-id="{{val.id}}"  class="city-item2">
+                    {{val.nm}}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/if}}
+        {{/each}}
+    </div>
+    <ul class="nav">
+        <li class="  nav-item" id="locate">
+            定位
+        </li>
+
+        <li class="  nav-item" id="history">
+            最近
+        </li>
+
+        <li class="  nav-item" id="hot">
+            热门
+        </li>
+        {{each arrFont}}
+        {{if $value}}
+        <li class="nav-letter  nav-item" id="{{$value.code}}">
+                {{$value.code}}
+        </li>
+        {{/if}}
+        {{/each}}
+    </ul>
+</div>

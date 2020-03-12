@@ -1,0 +1,33 @@
+{{if show}}
+{{each show}}
+<div class="ListLi">
+        <div class="ListTime">
+          <div class="startTime">{{$value.tm}}</div>
+          <div class="endTime">
+            <span class="endTimeDetail">00:00</span>
+            <span class="sanchangFont">散场</span>
+          </div>
+        </div>
+        <div class="Lange">
+          <div class="LangeDetail">{{$value.lang}}{{$value.tp}}</div>
+          <div class="cinemaNumber">{{$value.th}}</div>
+        </div>
+        <div class="price">
+          <div class="priceNumber">
+            <span class="priceDetail">
+              <span class="priceFont">￥</span>
+              <span class="priceNumberf">{{0-(-$value.vipPrice-$value.reservedMin)?0-(-$value.vipPrice-$value.reservedMin):38}}</span>
+            </span>
+            <span class="zhekouk" style="display:{{$value.vipPrice?'inline':'none'}}">
+              <span class="zhekouka">折扣卡</span>
+              <span class="zhekoujia">￥{{$value.vipPrice}}</span>
+            </span>
+          </div>
+          <div class="zhekouyouhui">{{$value.extraDesc}}</div>
+        </div>
+        <div class="buyprice">
+          购票
+        </div>
+      </div>
+      {{/each}}
+      {{/if }}

@@ -1,0 +1,19 @@
+<div class="index-container">
+  <header>
+  </header>
+  <div class="zhezhao" style="background: rgba(0, 0, 0, .6);display: none;height: 100%;width: 100%;position: absolute;top: 0;z-index: 9;">
+    <div class="close close1 show" style="display: none;z-index: 99;position: absolute;top:.53rem;height: 55%;width: 100%;"></div>
+    <div class="close close2" style="display: none;z-index: 99;position: absolute;top:.53rem;height: 55%;width: 100%;"></div>
+    <div class="close close3" style="display: none;z-index: 99;position: absolute;top:.53rem;height: 55%;width: 100%;"></div>
+  </div>
+    <main>
+    
+  </main>
+  <footer>
+    <ul>
+      <li data-to="position" class="active"><span class="yo-ico">&#xe679;</span><span class="yo-name">热映</span></li>
+      <li data-to="search"><span class="yo-ico">&#xe61d;</span><span class="yo-name">影院</span></li>
+      <li data-to="profile"><span class="yo-ico">&#xe63a;</span><span class="yo-name">我的</span></li>
+    </ul>
+  </footer>
+</div>

@@ -1,0 +1,114 @@
+
+.list-wrapper2{
+  height: 100%;
+  overflow: hidden;
+  .list-container2 {
+   ul{
+     background-color: #fff;
+     padding:0 10px;
+     li{
+       display: flex;
+       flex-direction: column;
+       padding:10px 0;
+       overflow: hidden;
+       @include border(1px 0 0 0, #e8e8e8);
+       .cinema{
+         font-size: .16rem;
+         display: flex;
+         justify-content: space-between;
+         .cinemaName{
+           width:60%;
+           @include ellipsis();
+           overflow:hidden;
+         }
+         .number{
+           color: red;
+         }
+         .yuanFont{
+          font-size:.1rem;
+          color: red;
+         }
+       }
+       .addr{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.12rem;
+       .position{
+         color: #666;
+         @include ellipsis(null,1);
+         width:100%;
+       }
+       .distance{
+         padding-left:5px ;
+         font-size: 0.12rem;
+         color: #666;
+       }
+      }
+       .status{
+         width:100%;
+        @include ellipsis();
+        .blueBorder{
+          padding: 1px;
+          margin-right: 5px;
+          color: #589daf;
+          border:1px solid #589daf;
+          font-size: .1rem;
+        }
+        .yellowBorder{
+          padding: 1px;
+          margin-right: 5px;
+          color: #f90;
+          border:1px solid #f90;
+          font-size: .1rem;
+        }
+       }
+       .discount{
+         display: flex;
+         font-size: .1rem;
+         padding-top: 5px;
+         color: #999;
+         @include ellipsis();
+         .huiFont{
+          background-color: #57c0f8;
+          color: #fff;
+          width: .15rem;
+          height: .15rem;
+          border-radius: 3px;
+          text-align: center;
+          line-height: .15rem;
+          margin-right: .05rem;
+         }
+       }
+     }
+   }
+  }
+  
+}
+.head,
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+
+  .head img,
+  .foot img {
+    width: .16rem;
+    height: .16rem;
+    transition: transform 150ms;
+    -webkit-transition: transform 150ms;
+  }
+
+  .head img {
+    transform: rotate(180deg);
+  }
+
+  .up {
+    transform: rotate(360deg) !important;
+    -webkit-transform: rotate(360deg) !important;
+  }
+
+  .down {
+    transform: rotate(180deg);
+  }

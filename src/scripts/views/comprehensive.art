@@ -1,0 +1,10 @@
+<div class="comprehensive-wrap">
+    <ul class="compre-list">
+        {{each com}}
+        <li class="compre" data-brandid="{{$value.id}}">
+            <span class="brand-name">{{$value.name}}</span>
+            <span class="brand-count">{{$value.count}}</span>
+        </li>
+        {{/each}}
+    </ul>
+</div>

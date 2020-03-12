@@ -1,0 +1,6 @@
+{{each suba}}
+<div class="item chosen" data-type="area" data-id="2">
+    <span class="item-name">{{$value.name}}</span>
+    <span class="item-count">{{$value.count}}</span>
+</div>
+{{/each}}

@@ -1,0 +1,28 @@
+<div class="allpage">
+    <div id="region-tab">
+        <ul class="tab">
+            <li class="item chosen" id="dis" refe="true" data-subnav="#district">商区</li>
+            <li class="item" id="sub" refe="true" data-subnav="#subway">地铁站</li>
+        </ul>
+    </div>
+    <div class="region-list">
+        <div class="region-sidenav">
+            {{each allcity}}
+            <div class="district-li" data-id="{{$value.id}}">{{$value.name}}({{$value.count}})</div>
+            {{/each}}
+        </div>
+        <div class="region-list-item">
+
+        </div>
+    </div>
+    <div class="region-list2" style="display: none;">
+        <div class="region-sidenav">
+            {{each sub}}
+            <div class="district-li" data-id="{{$value.id}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ">{{$value.name}}({{$value.count}})</div>
+            {{/each}}
+        </div>
+        <div class="region-list-item">
+
+        </div>
+    </div>
+</div>

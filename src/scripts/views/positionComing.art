@@ -1,0 +1,24 @@
+
+{{each timeArr}}
+<div>{{$value[0]}}</div>
+{{each $value[1] list}}
+<li class="m-item2" data-id="{{list.id}}">
+  <a class="poster-c" href="##">
+    <img src="{{list.img.replace(/w\.h/,'128.180')}}">
+  </a>
+  <a class="m-item-content" href="##">
+    <div class="title">
+      <p class="show-name">{{list.nm}} <i class="lbl-hdr">{{list.version.match(/3d/)?'3D':''}}</i><i class="lbl">{{list.version.match(/imax/)?'IMAX':''}}</i></p>
+      <p class="brief"><span class="txt-warning">{{list.wish}}</span>&nbsp;&nbsp;人想看</p>
+      <p class="brief">主演：{{list.star}}</p>
+      <p class="brief">{{list.rt}}上映</p>
+    </div>
+  </a>
+  <div class="btn-wrap">
+    <a class="tpp-btn" href="##">
+      预售
+    </a>
+  </div>
+</li>
+{{/each}}
+{{/each}}

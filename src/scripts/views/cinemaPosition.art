@@ -1,0 +1,24 @@
+
+<div class="list-wrapper2">
+  <div class="list-container2">
+    <div class="head">
+        <img src="/assets/images/arrow.png"/>
+        <b>下拉刷新...</b>
+      </div>
+  <ul>
+      {{each cinemaList}}
+   <li>
+     <div class="cinema">{{$value.nm}}<div class="prace"><span class="number">{{$value.sellPrice}}</span><span class="yuanFont">元</span><span class="qiFont">起</span></div></div>
+     <div class="position">{{$value.addr}}</div>
+     <div class="status"><span class="blueBorder">观影小食</span><span class="blueBorder">艺术影厅</span><span class="blueBorder">可停车</span></div>
+     <div class="discount"> <div class="huiFont">卡</div><div class="discountFont">{{$value.promotion.cardPromotionTag}}</div> </div>
+   </li>
+   {{/each}}
+   </ul>
+   <div class="foot">
+      <img src="/assets/images/arrow.png"/>
+      <b>上拉加载更多...</b>
+    </div>
+</div>
+
+</div>

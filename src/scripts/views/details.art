@@ -1,0 +1,64 @@
+<div class="detail-head">
+    <i class="yo-ico" id="back" data-to="position">&#xe602;</i>
+    <h1 class="nav-head">{{list.nm }}</h1>
+</div>
+<div class="movie-detail">
+    <div class="box-z"></div>
+    <div class= "box" style="background:url({{list.albumImg.replace(/w\.h/ ,'128.180')}})"></div>
+    <div class="details-box" data-id="{{list.id}}">
+        <div class="detail-img">
+            <img src="{{list.img.replace(/w\.h/,'71.100')}}">
+        </div>
+        <div class="detail-wrap">
+            <p class="detail-title">{{ list.nm }}</p>
+            <p class="detail-name">{{ list.enm }}</p>
+            <p class="detail-scroe">
+                <span class="scroe1">{{ list.sc }}</span>
+                <span class="scroe2">(115.8万人评)</span>
+            </p>
+            <p class="detail-type">{{ list.cat }}</p>
+            <p class="detail-src">{{ list.src }}</p>
+            <p class="detail-pub">{{ list.pubDesc }}</p>
+        </div>
+        <div class="arrow-g"><i class="yo-ico">&#xe62b;</i></div>
+    </div>
+</div>
+<div class="showDays">
+    <ul class="detail-data">
+        <li class="today chosen">今天10月12日</li>
+        <li class="today">明天10月13日</li>
+        <li class="today">后天10月14日</li>
+        <li class="today">周二10月15日</li>
+        <li class="today">周三10月16日</li>
+        <li class="today">周四10月17日</li>
+    </ul>
+</div>
+<div class="tab-wrap">
+    <div class="tab-item">全城<div class="arrow-down"></div></div>
+    <div class="tab-item">品牌<div class="arrow-down"></div></div>
+    <div class="tab-item">特色<div class="arrow-down"></div></div>
+</div>
+<ul>
+    <li class="cinemaShowId" data-id="70">
+        <div class="cinema">
+          <span class="cinemaName">嘉华国际影城（学清路店）</span>
+          <div class="prace">
+            <span class="number">35</span><span class="yuanFont">元起</span>
+          </div>
+        </div>
+        <div class="addr">
+          <span class="position">海淀区学清路甲8号圣熙8号购物中心5层西侧（学清路）</span>
+          <span class="distance">15km</span>
+        </div>
+        <div class="status">
+          <span class="blueBorder">退</span><span class="blueBorder">改签</span><span class="yellowBorder">小吃</span><span style="display:inline" class="yellowBorder">折扣卡</span><span style="display:inline" class="blueBorder">巨幕厅</span><span style="display:none" class="blueBorder"></span><span style="display:none" class="blueBorder"></span>
+        </div>
+        <div class="discount" style="display:none">
+      
+          <span class="huiFont" style="display:none">卡</span>
+          <span class="discountFont"></span>
+      
+      
+        </div>
+      </li>
+</ul>

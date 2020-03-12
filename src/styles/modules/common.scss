@@ -1,0 +1,13 @@
+#root {
+  height: 100%;
+    position: relative;
+
+}
+html{
+  font-size: 26.67vw;
+}
+@font-face {
+  font-family: 'yofont';
+  src: url('/assets/icons/iconfont.woff') format('woff'),
+       url('/assets/icons/iconfont.ttf') format('truetype');
+}
